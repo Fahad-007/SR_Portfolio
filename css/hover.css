@@ -1,0 +1,131 @@
+
+
+/*--------1st-----*/
+    .items .con p{
+        font-size: 14px;
+    }
+    .items {
+        transition: .3s;
+    }
+    .hov-1{
+        width: 100%;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.81);
+        opacity: 0;
+        transition: .5s ease-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-1{
+        text-align: center;
+        font-size: 0%;
+        transition: .4s;
+    }
+    .text-1 h4, .text-1 p{
+        font-size: 0;
+        opacity: 0;
+    }
+    .items:hover> .hov-1{
+        transform: translateX(0);
+        opacity: 1;
+        transition: .3s;
+        border:10px solid rgba(235, 235, 235, 0.4);
+    }
+    .hov-1:hover> .text-1{
+        font-size: 300%;
+        padding: 10px;
+        color: #fff;opacity: 1;
+        transform: rotate(360deg);
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+    .hov-1:hover> .text-1 h4, .text-1 p{
+        font-size: 16px;
+        opacity: 1;
+    }
+
+/*-------------2nd--------------*/
+
+
+    .text-2 h4, .text-2 p{
+        font-size: 0;
+        opacity: 0;
+    }
+    .text-2{
+        text-align: center;
+        font-size: 0%;
+        transition: .4s;
+        transform: rotate(360deg);
+    }
+    .hov-1:hover> .text-2{
+        font-size: 300%;
+        padding: 10px;
+        color: #fff;opacity: 1;
+        transform: rotate(0);
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+    .hov-1:hover> .text-2 h4, .text-2 p{
+        font-size: 16px;
+        opacity: 1;
+    }
+
+
+
+/*-------------3rd--------------*/
+
+    .hov-2{
+        width: 100%;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.81);
+        opacity: 0;
+        transition: .4s ease-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+    }
+    .items:hover> .hov-2{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .text-3{
+        transform: translateX(-500%);
+        color: #fff;
+        text-align: center;
+        transition: .2s ease-out;
+    }
+    .hov-2:hover> .text-3{
+        transform: translateX(0);
+        transition: .2s;
+    }
+
+/*-------------4th--------------*/
+
+
+     .hov-3{
+        width: 100%;
+        height: 200px;
+        background-color: rgba(0, 0, 0, 0.81);
+        opacity: 0;
+        transition: .4s ease-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+    }
+    .items:hover> .hov-3{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .text-4{
+        transform: translateX(500%);
+        color: #fff;
+        text-align: center;
+        transition: .2s;
+    }
+    .hov-3:hover> .text-4{
+        transform: translateX(0%);
+        transition: .2s;
+    }
